@@ -1,6 +1,97 @@
 .App {
   text-align: center;
 }
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.storiesContainer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: beige;
+}
+
+.Story {
+  flex-direction: column;
+  height: auto;
+
+  position: relative;
+}
+
+.Story button img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 3px;
+
+  border-radius: 50px;
+}
+.Story button {
+  width: 80px;
+  height: 80px;
+  margin-right: 2px;
+  padding: 0;
+  border-width: 0;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.AddStory {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 2px dashed #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-right: 2px;
+
+  &:hover {
+    background: #e0f7ff;
+  }
+}
+
+.FileInput {
+  display: none;
+}
+
+.Story ProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #007bff;
+  transition: width 3s linear;
+}
+
+.StoryIndicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.StoryIndicator span {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+
+  /* background: $props {
+    (props)=>(props.active ? "#007bff" : "#ccc")
+  }
+ */
+
+  margin: 0 5px;
+}
 
 .App-logo {
   height: 40vmin;

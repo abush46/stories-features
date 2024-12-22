@@ -28,10 +28,11 @@ export default App;
 import React from "react";
 import StoryCarousel from "./components/StoryCarousel";
 import StoriesFeatures from "./components/StoriesFeatures";
+import UserRegistration from "./components/UserRegistration";
 function App() {
   return (
     <div className="App">
-      <StoriesFeatures />
+      <UserRegistration />
     </div>
   );
 }

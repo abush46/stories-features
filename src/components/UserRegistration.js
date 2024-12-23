@@ -17,7 +17,7 @@ const UserRegistration = () => {
         password
       ); */
       //const user = userCredential.user;
-      await setDoc(doc(db, "users", "userId"), {
+      await setDoc(doc(db, "users", "userId2"), {
         name: name,
         email: email,
         age: age,

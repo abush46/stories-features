@@ -47,8 +47,8 @@ const UserRegistration = () => {
           type="text"
           className="form-control"
           value={name}
-          onChange={(value) => {
-            setName(value);
+          onChange={(e) => {
+            setName(e.target.value);
           }}
         />
       </div>

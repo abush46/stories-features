@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { auth, db } from "../utils/firebase";
 import { collection, doc, setDoc } from "firebase/firestore";
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
 const UserRegistration = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,7 +21,8 @@ const UserRegistration = () => {
       healthConcerns: healthConcerns,
     };
     try {
-      const userCredential = await auth.createUserWithEmailAndPassword(
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
         email,
         password
       );

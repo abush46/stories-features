@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { auth, db } from "../utils/firebase";
 import { collection, doc, setDoc } from "firebase/firestore";
+
 const UserRegistration = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -20,13 +21,13 @@ const UserRegistration = () => {
       healthConcerns: healthConcerns,
     };
     try {
-      /* const userCredential = await auth.createUserWithEmailAndPassword(
+      const userCredential = await auth.createUserWithEmailAndPassword(
         email,
         password
-      ); */
+      );
 
-      //const user = userCredential.user;
-      await setDoc(doc(db, "users", "userId2"), data);
+      const user = userCredential.user;
+      await setDoc(doc(db, "users", user), data);
       alert("Registered");
 
       // Redirect user to the user profile page or login page

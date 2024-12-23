@@ -28,7 +28,7 @@ const UserRegistration = () => {
       alert("Registered");
       // Redirect user to the user profile page or login page
     } catch (error) {
-      alert("Error registering user:", error);
+      alert("Error registering user:", name, error);
       console.error("Error registering user:", error);
     }
   };

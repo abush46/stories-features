@@ -41,8 +41,11 @@ const UserRegistration = () => {
 
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
-      <h2>User Registration</h2>
-      {/* <form onSubmit={handleRegister}> */}
+
+       <div className="card" style={{ width: '25rem' }}>
+                <div className="card-body">
+                    <h5 className="card-title text-center">Register</h5>
+      <form>
       <div className="md-3">
         <label className="form-label">Name</label>
         <input
@@ -84,7 +87,7 @@ const UserRegistration = () => {
           }}
         />
       </div>
-      <div className="col-md-6">
+      <div className="md-3">
         <label className="form-label">Password</label>
         <input
           className="form-control"
@@ -94,7 +97,7 @@ const UserRegistration = () => {
           }}
         />
       </div>
-      <div className="col-md-6">
+      <div className="md-3">
         <label className="form-label">Health Concerns</label>
         <input
           className="form-control"
@@ -112,8 +115,10 @@ const UserRegistration = () => {
       >
         Register
       </button>
-      {/* </form> */}
+      </form>
     </div>
+</div>
+</div>
   );
 };
 

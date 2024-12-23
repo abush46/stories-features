@@ -56,8 +56,9 @@ const UserRegistration = () => {
         <label className="form-label">E-mail</label>
         <input
           className="form-control"
+          value={email}
           onChange={(value) => {
-            setEmail(value);
+            setEmail(value.target.value);
           }}
         />
       </div>
@@ -65,8 +66,9 @@ const UserRegistration = () => {
         <label className="form-label">Age</label>
         <input
           className="form-control"
+          value={age}
           onChange={(value) => {
-            setAge(value);
+            setAge(value.target.value);
           }}
         />
       </div>
@@ -74,8 +76,9 @@ const UserRegistration = () => {
         <label className="form-label">Gemder</label>
         <input
           className="form-control"
+          value={gender}
           onChange={(value) => {
-            setGender(value);
+            setGender(value.target.value);
           }}
         />
       </div>
@@ -83,8 +86,9 @@ const UserRegistration = () => {
         <label className="form-label">Password</label>
         <input
           className="form-control"
+          value={password}
           onChange={(value) => {
-            setPassword(value);
+            setPassword(value.target.value);
           }}
         />
       </div>
@@ -92,8 +96,9 @@ const UserRegistration = () => {
         <label className="form-label">Health Concerns</label>
         <input
           className="form-control"
+          value={healthConcerns}
           onChange={(value) => {
-            setHealthConcerns(value);
+            setHealthConcerns(value.target.value);
           }}
         />
       </div>

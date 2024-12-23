@@ -40,7 +40,7 @@ const UserRegistration = () => {
   };
 
   return (
-    <div className="row g-3" style={{ width: 400, marginLeft: 250 }}>
+    <div className="container d-flex justify-content-center align-items-center vh-100" style={{ width: 400, marginLeft: 250 }}>
       <h2>User Registration</h2>
       {/* <form onSubmit={handleRegister}> */}
       <div className="col-md-6">

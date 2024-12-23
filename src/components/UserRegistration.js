@@ -46,6 +46,7 @@ const UserRegistration = () => {
         <input
           type="text"
           className="form-control"
+          value={name}
           onChange={(value) => {
             setName(value);
           }}

@@ -40,10 +40,10 @@ const UserRegistration = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100" style={{ width: 400, marginLeft: 250 }}>
+    <div className="container d-flex justify-content-center align-items-center vh-100">
       <h2>User Registration</h2>
       {/* <form onSubmit={handleRegister}> */}
-      <div className="col-md-6">
+      <div className="md-3">
         <label className="form-label">Name</label>
         <input
           type="text"
@@ -54,7 +54,7 @@ const UserRegistration = () => {
           }}
         />
       </div>
-      <div className="col-md-6">
+      <div className="md-3">
         <label className="form-label">E-mail</label>
         <input
           className="form-control"
@@ -64,7 +64,7 @@ const UserRegistration = () => {
           }}
         />
       </div>
-      <div className="col-md-3">
+      <div className="md-3">
         <label className="form-label">Age</label>
         <input
           className="form-control"
@@ -74,7 +74,7 @@ const UserRegistration = () => {
           }}
         />
       </div>
-      <div className="col-md-3">
+      <div className="md-3">
         <label className="form-label">Gemder</label>
         <input
           className="form-control"

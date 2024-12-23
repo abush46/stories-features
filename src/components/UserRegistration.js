@@ -11,25 +11,29 @@ const UserRegistration = () => {
 
   const handleRegister = async (e) => {
     //e.preventDefault();
+    const data = {
+      name: name,
+      email: email,
+      age: age,
+      gender: gender,
+      password: password,
+      healthConcerns: healthConcerns,
+    };
     try {
       /* const userCredential = await auth.createUserWithEmailAndPassword(
         email,
         password
       ); */
+
       //const user = userCredential.user;
-      await setDoc(doc(db, "users", "userId2"), {
-        name: name,
-        email: email,
-        age: age,
-        gender: gender,
-        password: password,
-        healthConcerns: healthConcerns,
-      });
+      await setDoc(doc(db, "users", "userId2"), data);
       alert("Registered");
+
       // Redirect user to the user profile page or login page
     } catch (error) {
       alert("Error registering user:", name, error);
       console.error("Error registering user:", error);
+      console.log(data);
     }
   };
 
@@ -40,6 +44,7 @@ const UserRegistration = () => {
       <div className="col-md-6">
         <label className="form-label">Name</label>
         <input
+          type="text"
           className="form-control"
           onChange={(value) => {
             setName(value);

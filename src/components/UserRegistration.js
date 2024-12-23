@@ -33,7 +33,7 @@ const UserRegistration = () => {
     } catch (error) {
       alert("Error registering user:", name, error);
       console.error("Error registering user:", error);
-      console.log(data);
+      console.error(data);
     }
   };
 

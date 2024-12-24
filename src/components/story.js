@@ -14,9 +14,9 @@ const Story = () => {
         <h1>Telegram Crypto App Clone</h1>
     </header>
 
-    <!-- Main Content -->
+    
     <div class="main-content">
-        <!-- Crypto Price and User Balance Section -->
+        
         <div class="info-section">
             <div>
                 <h3>Bitcoin Price</h3>
@@ -32,14 +32,14 @@ const Story = () => {
             </div>
         </div>
 
-        <!-- Messages Section -->
+      
         <div class="messages">
             <div class="message sent">Hello, how's the market today?</div>
             <div class="message received">It's looking good! Bitcoin is up.</div>
             <div class="message sent">Great news!</div>
         </div>
 
-        <!-- Input Area -->
+       
         <div class="input-area">
             <input type="text" placeholder="Type a message...">
             <button>Send</button>

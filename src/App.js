@@ -29,6 +29,7 @@ import React from "react";
 import StoryCarousel from "./components/StoryCarousel";
 import StoriesFeatures from "./components/StoriesFeatures";
 import UserRegistration from "./components/UserRegistration";
+import stories from "./components/stories";
 function App() {
   return (
     <div className="App">

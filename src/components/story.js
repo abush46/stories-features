@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import "../App.css";
 
-`;
 
 const Story = () => {
   const [progress, setProgress] = useState(0);

@@ -41,7 +41,7 @@ const Story = () => {
 
        
         <div class="input-area">
-            <input type="text" placeholder="Type a message...">
+            <input type="text" placeholder="Type a message..."/>
             <button>Send</button>
         </div>
     </div>

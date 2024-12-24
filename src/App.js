@@ -29,11 +29,13 @@ import React from "react";
 import StoryCarousel from "./components/StoryCarousel";
 import StoriesFeatures from "./components/StoriesFeatures";
 import UserRegistration from "./components/UserRegistration";
-import stories from "./components/stories";
+import Story from "./components/Story";
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
-      <UserRegistration />
+      <Story />
     </div>
   );
 }

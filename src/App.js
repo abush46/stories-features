@@ -38,10 +38,8 @@ function App() {
       header>
         <h1>Telegram Crypto App Clone</h1>
     </header>
-
- 
     <div class="main-content">
-        <!-- Crypto Price and User Balance Section -->
+        
         <div class="info-section">
             <div>
                 <h3>Bitcoin Price</h3>

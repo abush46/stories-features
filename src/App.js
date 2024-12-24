@@ -30,6 +30,7 @@ import StoryCarousel from "./components/StoryCarousel";
 import StoriesFeatures from "./components/StoriesFeatures";
 import UserRegistration from "./components/UserRegistration";
 import Story from "./components/story";
+import './App.css';
 
 
 function App() {

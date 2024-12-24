@@ -35,7 +35,7 @@ import Story from "./components/story";
 function App() {
   return (
     <div className="App">
-      header>
+      <header>
         <h1>Telegram Crypto App Clone</h1>
     </header>
     <div class="main-content">

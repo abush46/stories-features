@@ -41,7 +41,7 @@ function App() {
     </header>
     <div class="main-content">
         
-      {/*  <div class="info-section">
+        <div class="info-section">
             <div>
                 <h3>Bitcoin Price</h3>
                 <p>$45,000</p>
@@ -65,9 +65,9 @@ function App() {
 
        
         <div class="input-area">
-            <input type="text" placeholder="Type a message...">
+            <input type="text" placeholder="Type a message..."/>
             <button>Send</button>
-        </div>*/}
+        </div>
     </div>
     </div>
   );

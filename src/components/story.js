@@ -9,6 +9,7 @@ const Story = () => {
   
 
   return (
+<>
     <header>
         <h1>Telegram Crypto App Clone</h1>
     </header>
@@ -44,6 +45,7 @@ const Story = () => {
             <button>Send</button>
         </div>
     </div>
+</>
 
   );
 };

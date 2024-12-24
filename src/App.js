@@ -29,10 +29,46 @@ import React from "react";
 import StoryCarousel from "./components/StoryCarousel";
 import StoriesFeatures from "./components/StoriesFeatures";
 import UserRegistration from "./components/UserRegistration";
+import Story from "./components/story";
+import './App.css';
+
+
 function App() {
   return (
     <div className="App">
-      <UserRegistration />
+      <header>
+        <h1>Telegram Crypto App Clone</h1>
+    </header>
+    <div class="main-content">
+        <p>Michael Samson</p>
+        <div class="info-section">
+            <div>
+                <h3>Bitcoin Price</h3>
+                <p>$45,000</p>
+            </div>
+            <div>
+                <h3>User Balance</h3>
+                <p>1.5 BTC</p>
+            </div>
+            <div>
+                <h3>Ethereum Price</h3>
+                <p>$3,000</p>
+            </div>
+        </div>
+
+       
+        <div class="messages">
+            <div class="message sent">Hello, how's the market today?</div>
+            <div class="message received">It's looking good! Bitcoin is up.</div>
+            <div class="message sent">Great news!</div>
+        </div>
+
+       
+        <div class="input-area">
+            <input type="text" placeholder="Type a message..."/>
+            <button>Send</button>
+        </div>
+    </div>
     </div>
   );
 }

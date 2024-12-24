@@ -40,7 +40,7 @@ function App() {
         <h1>Telegram Crypto App Clone</h1>
     </header>
     <div class="main-content">
-        
+        <p>Michael Samson</p>
         <div class="info-section">
             <div>
                 <h3>Bitcoin Price</h3>
@@ -48,7 +48,7 @@ function App() {
             </div>
             <div>
                 <h3>User Balance</h3>
-                <p>0.5 BTC</p>
+                <p>1.5 BTC</p>
             </div>
             <div>
                 <h3>Ethereum Price</h3>

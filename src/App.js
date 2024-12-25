@@ -98,7 +98,7 @@ function App() {
           <div class="message sent">Hello, how's the market today?</div>
           <div class="message received">It's looking good! Bitcoin is up.</div>
           <div class="message sent">Great news!</div>
-          <div class="message sent"></div>
+          <div class="message sent" id="response"></div>
         </div>
 
         <div class="input-area">

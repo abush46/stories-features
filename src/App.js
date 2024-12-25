@@ -69,12 +69,12 @@ import "./App.css";
 function App() {
   const [username, setUsername] = useState();
   useEffect(() => {
-    if (window.Telegram?.WebApp) {
-      // first we should validate that the information is correct with initData but we can use initDataUnsafe for now
-      // how to validate: https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app
-      const telegram_user = window.Telegram.WebApp.initDataUnsafe?.user;
-      setUsername(telegram_user);
-    }
+    //if (window.Telegram?.WebApp) {
+    // first we should validate that the information is correct with initData but we can use initDataUnsafe for now
+    // how to validate: https://core.telegram.org/bots/webapps#validating-data-received-via-the-mini-app
+    const telegram_user = window.Telegram.WebApp.initDataUnsafe?.user;
+    setUsername(telegram_user);
+    //}
   }, []);
   const handleSend = () => {
     const command = document.getElementById("command").value;
@@ -89,7 +89,7 @@ function App() {
         <h1>Telegram Crypto App Clone</h1>
       </header>
       <div class="main-content">
-        <p>{username?.first_name}</p>
+        <p>{username.first_name}</p>
         <div class="info-section">
           <div>
             <h3>Bitcoin Price</h3>

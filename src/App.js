@@ -79,8 +79,8 @@ function App() {
   const handleSend = () => {
     const command = document.getElementById("command").value;
     const responseDiv = document.getElementById("response");
-    const telegram_user = window.Telegram.WebApp.initDataUnsafe?.user;
-    responseDiv.innerHTML = telegram_user;
+    //const telegram_user = window.Telegram.WebApp.initDataUnsafe?.user;
+    responseDiv.innerHTML = command;
     document.getElementById("command").innerHTML = "";
   };
 

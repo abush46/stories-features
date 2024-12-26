@@ -80,8 +80,39 @@ function App() {
     const command = document.getElementById("command").value;
     const responseDiv = document.getElementById("response");
     //const telegram_user = window.Telegram.WebApp.initDataUnsafe?.user;
-    responseDiv.innerHTML = command;
-    document.getElementById("command").innerHTML = "";
+    if (command) {
+      // Send command to the Telegram bot
+      fetch(
+        `https://api.telegram.org/7242228033:AAGeQDRDv5Texj6aLM586TMbdiZcZy2gd_8/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: "1234", // Replace with your chat ID
+            text: command,
+          }),
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.ok) {
+            responseDiv.innerHTML = "Command sent successfully!";
+          } else {
+            responseDiv.innerHTML =
+              "Error sending command: " + data.description;
+          }
+        })
+        .catch((error) => {
+          responseDiv.innerHTML = "Error: " + error.message;
+        });
+    } else {
+      responseDiv.innerHTML = "Please enter a command.";
+    }
+
+    // responseDiv.innerHTML = command;
+    // document.getElementById("command").innerHTML = "";
   };
 
   return (

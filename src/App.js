@@ -83,22 +83,32 @@ function App() {
     if (command) {
       // Send command to the Telegram bot
       fetch(
-        `https://api.telegram.org/7242228033:AAGeQDRDv5Texj6aLM586TMbdiZcZy2gd_8/sendMessage`,
+        `https://my-bot-beryl-iota.vercel.app/api/bot`,
+        //`https://api.telegram.org/7242228033:AAGeQDRDv5Texj6aLM586TMbdiZcZy2gd_8/sendMessage`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            chat_id: "1234", // Replace with your chat ID
-            text: command,
+            message: {
+              chat: {
+                id: "123",
+              },
+              from: {
+                id: "1",
+                first_name: "mic",
+              },
+              text: command,
+              chat_id: "12345",
+            },
           }),
         }
       )
         .then((response) => response.json())
         .then((data) => {
           if (data.ok) {
-            responseDiv.innerHTML = "Command sent successfully!";
+            responseDiv.innerHTML = "Command sent successfully!" + data;
           } else {
             responseDiv.innerHTML =
               "Error sending command: " + data.description;
